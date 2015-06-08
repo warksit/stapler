@@ -34,16 +34,6 @@ trait EloquentTrait
         $attachment->setInstance($this);
         $this->attachedFiles[$name] = $attachment;
     }
-
-    /**
-     * The "booting" method of the model.
-     */
-    public static function boot()
-    {
-        parent::boot();
-
-        static::bootStapler();
-    }
     
     /**
      * The trait booting method
