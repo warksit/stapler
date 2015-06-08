@@ -44,6 +44,14 @@ trait EloquentTrait
 
         static::bootStapler();
     }
+    
+    /**
+     * The trait booting method
+     */
+    public static function bootEloquentTrait()
+    {
+        static::bootStapler();
+    }
 
     /**
      * Register eloquent event handlers.
